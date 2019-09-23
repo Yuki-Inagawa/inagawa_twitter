@@ -1,0 +1,29 @@
+.index
+  = render 'nav'
+  .main
+    .tweets
+      .tweet
+        .tweet__header
+          .tweet__header__icon
+            = image_tag("member_photo_noimage_thumb.png")
+          .tweet__header__name
+            %p 稲川裕樹
+        .tweet___content
+          .tweet__content__text
+            %p この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ
+          .tweet__content__image
+            = image_tag("kamonohasi.jpg")
+        .tweet__btns
+          .tweet__btns--comments
+            %i.fa.fa-comment
+            %p.comments__number 10
+          .tweet__btns--likes
+            %i.fa.fa-heart
+            %p.likes__number 100
+  
+    = render 'search'
+  = link_to  root_path, class: 'submit-btn-link' do
+    .submit-btn tweet
+    = fa_icon 'twitter', class: 'submit-button-icon'
+    -# %i.fab.fa-twitter
+

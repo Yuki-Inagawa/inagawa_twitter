@@ -1,0 +1,147 @@
+nav{
+  background-color:black;
+  color:white;
+  border-bottom: 5px;
+  border-color: white;
+  margin-bottom: 2px;
+  #navbarNav{
+    ul{
+      li{
+        a{
+          color: white;
+        }
+        a:hover{
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+.index{
+  height: 100%;
+  display: flex;
+  margin: 3px;
+}
+.nav{
+  width:20%;
+  background-color: black;
+  li{
+    a{
+      color: white;
+    }
+    a:hover{
+      opacity: 0.8;
+    }
+  }
+}
+.main{
+  margin-left:3px ; 
+  width:80%;
+  display: flex;
+  .tweets{
+    max-width: 600px;
+    background-color: gray;
+    .tweet{
+      margin-bottom: 2px; 
+      padding: 40px;
+      background-color:black;
+      &__header{
+        margin-bottom: 10px; 
+        display: flex;
+        &__icon{
+          img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+          }
+        }
+        &__name{
+          margin: 20px;
+          p{
+            color: white;
+          }
+        }
+      }
+      .tweet__content{
+        &__text{
+          color: white;
+        }
+        &__image{
+        }
+      }
+      .tweet__btns{
+        margin:10px;
+        display: flex;
+        &--comments{
+          margin-right:30px;
+          display: flex;
+          color: white;
+          .fa-comment{
+            margin-right:10px;
+          }
+        }
+        .tweet__btns--likes{
+          margin-right:30px;
+          display: flex;
+          color: rgb(224, 36, 94);
+          .fa-heart{
+            margin-right:10px;
+          }
+        }
+      }
+    }
+  }
+  .search{
+    width:100%;
+    background-color:black;
+    margin-left: 3px;
+    &__box{
+      padding:20px;
+      input{
+      }
+    }
+  }
+}
+
+.submit-btn-link {
+  z-index: 100;
+  margin: 32px 0 0;
+  color: #fff;
+  bottom: 32px;
+  right: 32px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: fixed;
+  background: #1DA1F2;
+  text-align: center;
+  box-shadow: 4px 4px 9px 0px rgba(255,255,255,0.45) inset, -4px -4px 9px 0px rgba(0, 0, 0, 0.06) inset;
+  margin:0.5em 0;
+  transition: .3s;
+  .submit-btn{
+    margin: 32px 0 0;
+    font-size: 22px;
+  }
+  .submit-button-icon {
+    font-size: 54px;
+  }
+}
+.submit-btn-link:hover:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+.submit-btn-link:hover {
+  text-decoration: none;
+  background: #fff;
+  color: #1DA1F2;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+

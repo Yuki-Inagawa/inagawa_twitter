@@ -103,4 +103,45 @@ nav{
   }
 }
 
+.submit-btn-link {
+  z-index: 100;
+  margin: 32px 0 0;
+  color: #fff;
+  bottom: 32px;
+  right: 32px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  position: fixed;
+  background: #1DA1F2;
+  text-align: center;
+  box-shadow: 4px 4px 9px 0px rgba(255,255,255,0.45) inset, -4px -4px 9px 0px rgba(0, 0, 0, 0.06) inset;
+  margin:0.5em 0;
+  transition: .3s;
+  .submit-btn{
+    margin: 32px 0 0;
+    font-size: 22px;
+  }
+  .submit-button-icon {
+    font-size: 54px;
+  }
+}
+.submit-btn-link:hover:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+.submit-btn-link:hover {
+  text-decoration: none;
+  background: #fff;
+  color: #1DA1F2;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
 

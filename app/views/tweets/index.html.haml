@@ -20,6 +20,10 @@
           .tweet__btns--likes
             %i.fa.fa-heart
             %p.likes__number 100
-
+  
     = render 'search'
+  = link_to  root_path, class: 'submit-btn-link' do
+    .submit-btn tweet
+    = fa_icon 'twitter', class: 'submit-button-icon'
+    -# %i.fab.fa-twitter
 
